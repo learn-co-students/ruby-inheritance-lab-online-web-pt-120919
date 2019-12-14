@@ -18,3 +18,20 @@ some_knowledge = avi.teach
 steve.learn(some_knowledge)
 
 puts "Steve just learned this important knowledge: '#{steve.knowledge.first}' from Avi"
+
+jim = User.new
+jim.first_name = "jim"
+jim.last_name = "leugemors"
+
+#jim.learn => undefined message
+
+some_knowledge = avi.teach
+steve.learn(some_knowledge)
+
+kim = Student.new 
+kim.first_name = "kim"
+kim.last_name = "possible"
+some_knowledge = avi.teach
+kim.learn(some_knowledge)
+
+puts "Steve learned #{steve.knowledge[1]} and kim learned #{kim.knowledge.first} from Avi "
