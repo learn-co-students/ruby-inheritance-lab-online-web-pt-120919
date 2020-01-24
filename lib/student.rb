@@ -2,6 +2,10 @@
 def initialize
     @knowledge =[]
   end
-  def learn 
-    @knowledge 
+  def learn(string)
+    @knowledge << string
+  end
+  def knowledge
+    return @knowledge
+end 
 end 
